@@ -39,7 +39,7 @@ public class ScanerString_1 {
         //Вывод каждой буквы слова с новой строки, а также проверка условия "наличие буквы (а) в слове"
         for (int i = 0; i < masChar.length; i++) {
             if (!masChar[i].equals("a")) { //Использование метода equals
-                System.out.println(masChar[i]);
+                System.out.println("\033[0;32m" + masChar[i]);
             } else {
                 System.out.println("Вывод букв прекращен, так как слово содержит букву (a).");
                 break; //Прекращение вывода букв
