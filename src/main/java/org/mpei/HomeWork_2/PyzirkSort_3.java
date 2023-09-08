@@ -16,7 +16,6 @@ public class PyzirkSort_3 {
         }
         return arrayVvod;
     }
-
     public static double median(int sizeArray, int[] arrayVvod) {
         int delCel = sizeArray % 2;
         int delOst = sizeArray / 2;
