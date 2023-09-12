@@ -1,4 +1,4 @@
-package org.mpei.HomeWork_3.Convercers;
+package org.mpei.HomeWork_3.Converters;
 
 public interface Converter {
     double convertToRub(double ue);

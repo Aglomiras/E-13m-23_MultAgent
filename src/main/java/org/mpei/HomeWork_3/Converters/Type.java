@@ -1,8 +1,8 @@
-package org.mpei.HomeWork_3.Convercers;
+package org.mpei.HomeWork_3.Converters;
 
 public enum Type {
     Rub,
     Dollar,
     Yen,
-    Yuan
+    Yuan;
 }

@@ -1,9 +1,8 @@
-package org.mpei.HomeWork_3.Convercers;
+package org.mpei.HomeWork_3.Converters;
 
-import static org.mpei.HomeWork_3.Convercers.Type.Dollar;
+import static org.mpei.HomeWork_3.Converters.Type.Dollar;
 
-public class CurencyDollar_Rub implements Converter {
-    private Type titl = Dollar;
+public class CurencyDollarToRub implements Converter {
     @Override
     public double convertToRub(double ue) {
         return ue * 97.92;
@@ -16,6 +15,6 @@ public class CurencyDollar_Rub implements Converter {
 
     @Override
     public Type getTitl() {
-        return titl;
+        return Type.Dollar;
     }
 }
