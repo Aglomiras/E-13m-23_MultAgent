@@ -1,6 +1,4 @@
-package org.mpei.HomeWork_3.Converters;
-
-import static org.mpei.HomeWork_3.Converters.Type.Yuan;
+package org.mpei.HomeWork_3.Version_2.Converters;
 
 public class CurencyYuanToRub implements Converter {
     @Override
@@ -14,7 +12,7 @@ public class CurencyYuanToRub implements Converter {
     }
 
     @Override
-    public Type getTitl() {
+    public Type getType() {
         return Type.Yuan;
     }
 }

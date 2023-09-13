@@ -1,6 +1,4 @@
-package org.mpei.HomeWork_3.Converters;
-
-import static org.mpei.HomeWork_3.Converters.Type.Dollar;
+package org.mpei.HomeWork_3.Version_1.Converters;
 
 public class CurencyDollarToRub implements Converter {
     @Override

@@ -1,6 +1,9 @@
-package org.mpei.HomeWork_3;
+package org.mpei.HomeWork_3.Version_1;
 
-import org.mpei.HomeWork_3.Converters.*;
+import org.mpei.HomeWork_3.Version_1.Converters.CurencyDollarToRub;
+import org.mpei.HomeWork_3.Version_1.Converters.CurencyYenToRub;
+import org.mpei.HomeWork_3.Version_1.Converters.CurencyYuanToRub;
+import org.mpei.HomeWork_3.Version_1.Converters.Type;
 
 public class Exchanger {
     CurencyDollarToRub curencyDollarToRub = new CurencyDollarToRub();
@@ -8,7 +11,6 @@ public class Exchanger {
     CurencyYuanToRub curencyYuanToRub = new CurencyYuanToRub();
     public void convert(double goldMy, Type inputMy, Type outputMy) {
         double support;
-
         if (outputMy == Type.Rub) {
             if (inputMy == Type.Dollar) {
                 System.out.println(curencyDollarToRub.convertToRub(goldMy));
