@@ -1,8 +1,9 @@
 package org.mpei.HomeWork_5.LinkedList;
 
+import java.util.List;
+
 public class MyLinkedListEl<T> {
     private LinkedListEl<T> firstEl;
-
     private LinkedListEl<T> findLastEl() {
         if (firstEl != null) {
             LinkedListEl<T> rightEl = firstEl;
@@ -18,6 +19,7 @@ public class MyLinkedListEl<T> {
             return null;
         }
     }
+
     /**Метод, который добавляет новый элемент в конец списка*/
     public void add(T element) {
         LinkedListEl<T> lastEl = findLastEl();
@@ -29,6 +31,7 @@ public class MyLinkedListEl<T> {
             firstEl = new LinkedListEl<>(element);
         }
     }
+
     /**Метод, который возвращает элемент из списка по указанному индексу*/
     public T get(int index) {
         if (index > (size() - 1)) {
@@ -41,6 +44,7 @@ public class MyLinkedListEl<T> {
             return element.getValue();
         }
     }
+
     /**Метод, который удаляет элемень из списка по указанному индексу*/
     public T remove(int index) {
         if (index > (size() - 1)) {
@@ -66,6 +70,7 @@ public class MyLinkedListEl<T> {
             return element.getValue();
         }
     }
+
     /**Метод, который возвращает количество элементов в списке. Сколько элементов содержит список*/
     public int size() {
         int count = 1;
