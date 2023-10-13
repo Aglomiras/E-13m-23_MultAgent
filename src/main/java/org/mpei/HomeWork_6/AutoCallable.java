@@ -8,5 +8,5 @@ import java.lang.annotation.Target;
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface AutoCallable {
-    String stringText() default "хуй";
+    String nameA() default "Джо-Джо";
 }

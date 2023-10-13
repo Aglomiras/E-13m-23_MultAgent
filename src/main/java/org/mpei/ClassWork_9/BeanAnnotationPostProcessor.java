@@ -1,6 +1,5 @@
 package org.mpei.ClassWork_9;
 
-import javassist.tools.reflect.Reflection;
 import org.reflections.Reflections;
 
 import java.util.ArrayList;
@@ -12,14 +11,15 @@ public class BeanAnnotationPostProcessor {
 
         Reflections r = new Reflections(Printer.class); //Можно передать в метод конкретный класс среди которого необходимо искать объект
         Set<Class<?>> gettypeann = r.getTypesAnnotatedWith(Bean.class); //Нахождения объектов типа классов
-        System.out.println();
+        System.out.println("Пробел");
 
         List<Printer> printerList = new ArrayList<>();
         for (Class<?> clazz : gettypeann) {
+            System.out.println("Пробел");
             if (!Printer.class.isAssignableFrom(clazz)) {
+                System.out.println("555");
                 continue;
             }
-
 
             Printer o = (Printer) clazz.getDeclaredConstructor().newInstance();
             printerList.add(o);
