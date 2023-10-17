@@ -1,3 +1,15 @@
 Hello, motherfucker!
  -Negr?
  -NoNegr)
+
+Java Reflection and Introspection   - https://habr.com/ru/companies/skillfactory/articles/533478/
+Java все о Reflection               - http://ronmamo.github.io/reflections/org/reflections/Reflections.html
+Java подключение Reflection         - https://www.baeldung.com/reflections-library
+Java немного о Reflection           - https://javarush.com/groups/posts/513-reflection-api-refleksija-temnaja-storona-java
+Java немного о Reflection           - https://javarush.com/quests/lectures/jru.module2.lecture32
+Java получение методов класса       - https://stackoverflow.com/questions/51763472/get-all-methods-with-a-particular-annotation-in-a-package
+Java поиск имплементируемых классов - https://stackoverflow.com/questions/50955626/get-all-classes-with-an-annotation-and-add-them-to-a-hashmap-in-android
+
+Java метод IsAssignableFrom()       - https://www.geeksforgeeks.org/class-isassignablefrom-method-in-java-with-examples/мео
+                                    - https://urvanov.ru/2019/02/04/разница-между-instanceof-и-isassignablefrom-в-java/
+Java метод getDeclaredConstructor() - https://www.geeksforgeeks.org/class-getdeclaredconstructor-method-in-java-with-examples/

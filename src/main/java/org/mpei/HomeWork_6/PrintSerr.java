@@ -16,6 +16,7 @@ public class PrintSerr implements Call {
             Scanner scanner = new Scanner(file);
 
             while (scanner.hasNext()) {
+                this.text += "\n";
                 this.text += scanner.nextLine();
             }
             scanner.close();

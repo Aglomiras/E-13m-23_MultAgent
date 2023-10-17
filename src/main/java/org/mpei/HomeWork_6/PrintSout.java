@@ -3,7 +3,6 @@ package org.mpei.HomeWork_6;
 import lombok.Data;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 @Data
@@ -16,6 +15,7 @@ public class PrintSout implements Call {
             Scanner scanner = new Scanner(file);
 
             while (scanner.hasNext()) {
+                this.text += "\n";
                 this.text += scanner.nextLine();
             }
             scanner.close();

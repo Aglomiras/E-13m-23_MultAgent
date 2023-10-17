@@ -22,14 +22,16 @@ public class AutoCallableAnnotationProcessor {
                 if (method.isAnnotationPresent(AutoCallable.class)) {
 
                     try {
-
                         method.invoke(classAuto.getDeclaredConstructor().newInstance());
 
-                    } catch (RuntimeException | NoSuchMethodException | InstantiationException |
-                             IllegalAccessException | InvocationTargetException exception) {
+                    } catch (RuntimeException
+                             | NoSuchMethodException
+                             | InstantiationException
+                             | IllegalAccessException
+                             | InvocationTargetException exception) {
                         throw new RuntimeException(exception);
                     } finally {
-//                        System.out.println("По крайней мере, до определения аннотации дошли...");
+                        System.out.println("По крайней мере, до определения аннотации дошли...");
                     }
                 }
             }
