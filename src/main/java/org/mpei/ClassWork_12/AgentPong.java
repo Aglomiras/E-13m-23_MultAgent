@@ -1,7 +1,11 @@
 package org.mpei.ClassWork_12;
 
 import jade.core.Agent;
+import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
+@Slf4j
 public class AgentPong extends Agent {
     @Override
     protected void setup() {
@@ -11,5 +15,9 @@ public class AgentPong extends Agent {
 
         this.addBehaviour(new ReceiverPingBehaviour());
         this.addBehaviour(new SendPongBehaviour());
+
+//        Logger logger = LoggerFactory.getLogger("myLogger");
+//        logger.info("Agent {} was born", this.getName(), System.currentTimeMillis());
+//        logger.debug("DEBUG {} was born", this.getName(), System.currentTimeMillis());
     }
 }
