@@ -51,8 +51,8 @@ public class Main {
         List<Streamer> streamers1 = streamers.stream()
                 .filter(s -> s.getAge() > 21 && s.getSubscribers() > 15000000)
                 .toList();
-        System.out.println("Список стримеров старше 21 года и с более 15M подписчиков: ");
-        System.out.println(streamers1);
+        System.out.println("\033[0;32m" + "Список стримеров старше 21 года и с более 15M подписчиков: ");
+        System.out.println("\033[0;38m" + streamers1);
 
         /**
          * 2) Найти самого молодого стримера на незаболкированной платформе
@@ -62,16 +62,16 @@ public class Main {
                 .sorted((o1, o2) -> o1.getAge() < o2.getAge() ? -1 : 1)
                 .limit(1)
                 .toList();
-        System.out.println();
-        System.out.println(streamers2);
+        System.out.println("\033[0;32m" + "Самый молодой стример на незаблокированной платформе: ");
+        System.out.println("\033[0;38m" + streamers2);
 
         /**
          * 3) Получить Map<Name(String), PlatfromName(String)> для всех стримеров
          * */
         Map<String, List<Platform>> streamers3 = streamers.stream()
                 .collect(Collectors.toMap(s -> s.getName(), s -> s.getPlatforms()));
-        System.out.println("Получение Map: ");
-        System.out.println(streamers3);
+        System.out.println("\033[0;32m" + "Получение Map: ");
+        System.out.println("\033[0;38m" + streamers3);
 
         /**
          * 4) Найти стримера с наименишм количествои подписчиков, который работает на заблокированной платформе
@@ -81,8 +81,8 @@ public class Main {
                 .sorted((o1, o2) -> o1.getSubscribers() < o2.getSubscribers() ? -1 : 1)
                 .limit(1)
                 .toList();
-        System.out.println("Меньше всего подписчиков на PornoHub: ");
-        System.out.println(streamers4);
+        System.out.println("\033[0;32m" + "Меньше всего подписчиков на PornoHub: ");
+        System.out.println("\033[0;38m" + streamers4);
 
         /**
          * 4.1) Найти стримера с наибольшим количествои подписчиков, который работает на заблокированной платформе
@@ -92,8 +92,8 @@ public class Main {
                 .sorted((o1, o2) -> o1.getSubscribers() < o2.getSubscribers() ? 1 : -1)
                 .limit(1)
                 .toList();
-        System.out.println("Больше всего подписчиков на PornoHub: ");
-        System.out.println(streamers4_1);
+        System.out.println("\033[0;32m" + "Больше всего подписчиков на PornoHub: ");
+        System.out.println("\033[0;38m" + streamers4_1);
 
         /**
          * 5) Вычислить средний возраст стримеров на платформе twitch
@@ -102,8 +102,8 @@ public class Main {
                 .filter(s -> s.getPlatforms().stream().anyMatch(p -> p.getName() == "Twich") == true)
                 .mapToDouble(s -> s.getAge())
                 .average().getAsDouble();
-        System.out.println("Средний возраст стримеров на платформе twitch: ");
-        System.out.println(ageAge);
+        System.out.println("\033[0;32m" + "Средний возраст стримеров на платформе twitch: ");
+        System.out.println("\033[0;38m" + ageAge);
 
         /**
          * 6) Найти любого стримера на youtube с подсчиками > 10k. Если его нет - бросить NoSuchElementException
@@ -112,12 +112,8 @@ public class Main {
                 .filter(s -> s.getPlatforms().stream().anyMatch(p -> p.getName() == "Youtub") == true && s.getSubscribers() > 10000000)
                 .findAny()
                 .orElseThrow(NoSuchElementException::new)); //Exception
-        System.out.println("Любой стример на youtube с подсчиками > 10M: ");
-        if (!streamers5.isEmpty()) {
-            System.out.println(streamers5);
-        } else {
-            throw new NoSuchElementException();
-        }
+        System.out.println("\033[0;32m" + "Любой стример на youtube с подсчиками > 10M: ");
+        System.out.println("\033[0;38m" + streamers5);
 
         /**
          * 7) Получить из листа стримеров лист платформ (не должны повторяться платформы в одном листе)
@@ -129,6 +125,7 @@ public class Main {
                 .flatMap(List::stream)
                 .distinct()
                 .toList();
-        System.out.println(platforms);
+        System.out.println("\033[0;32m" + "Получение листа платформ: ");
+        System.out.println("\033[0;38m" + platforms);
     }
 }
