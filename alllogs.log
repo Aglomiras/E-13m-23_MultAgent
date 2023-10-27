@@ -1,2 +1,7 @@
 20.окт..2023 17:02:13.945 [Ponger] INFO  myLogger - Agent Ponger@192.168.56.1:1099/JADE was born
 20.окт..2023 17:03:27.979 [Ponger] INFO  myLogger - Agent Ponger@192.168.56.1:1099/JADE was born
+28.окт..2023 02:02:57.382 [Initiator] INFO  o.m.C.A.InitiatorAgent - I was born Initiator
+28.окт..2023 02:02:57.382 [Agent1] INFO  o.m.C.A.ParticipantAgent - I was born Agent1
+28.окт..2023 02:03:02.390 [Initiator] INFO  o.m.C.F.WaitForAnswersParallelBehaviour - TIME IS UP
+28.окт..2023 02:03:02.390 [Initiator] INFO  o.m.C.F.WaitForAnswersParallelBehaviour - No appropriate offer was received
+28.окт..2023 02:03:02.390 [Initiator] INFO  o.m.C.F.BadEnd - BAAAD END
