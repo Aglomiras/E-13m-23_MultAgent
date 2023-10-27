@@ -1,8 +1,8 @@
-package org.mpei.HomeWork_8.Auction;
+package org.mpei.HomeWork_8.Auction.Version_1;
 
 import jade.core.Agent;
 
-public class AgentOne extends Agent {
+public class AgentThree extends Agent {
     @Override
     protected void setup() {
         System.out.println(getLocalName() + " born");

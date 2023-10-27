@@ -1,4 +1,4 @@
-package org.mpei.HomeWork_8.Auction;
+package org.mpei.HomeWork_8.Auction.Version_1;
 
 import jade.core.Agent;
 
