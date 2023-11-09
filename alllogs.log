@@ -5,3 +5,19 @@
 28.окт..2023 02:03:02.390 [Initiator] INFO  o.m.C.F.WaitForAnswersParallelBehaviour - TIME IS UP
 28.окт..2023 02:03:02.390 [Initiator] INFO  o.m.C.F.WaitForAnswersParallelBehaviour - No appropriate offer was received
 28.окт..2023 02:03:02.390 [Initiator] INFO  o.m.C.F.BadEnd - BAAAD END
+28.окт..2023 14:03:50.246 [Initiator] INFO  o.m.C.A.InitiatorAgent - I was born Initiator
+28.окт..2023 14:03:50.246 [Agent1] INFO  o.m.C.A.ParticipantAgent - I was born Agent1
+02.нояб..2023 14:58:36.327 [Seller1] INFO  o.m.C.AgentSeller - My min price 10.80619164335544
+02.нояб..2023 14:58:36.327 [Seller2] INFO  o.m.C.AgentSeller - My min price 14.717292780967334
+02.нояб..2023 14:58:39.341 [Seller1] INFO  o.m.C.SellerBehaviour - Received bet 29.434585561934668 from Seller2 but the msg is ignored cause my prev bet21.61238328671088 is less
+02.нояб..2023 14:58:39.341 [Seller2] INFO  o.m.C.SellerBehaviour - Received a bet 21.61238328671088 which less than my prev bet  29.434585561934668. Sending the new one 19.286492270829402
+02.нояб..2023 14:58:39.341 [Seller1] INFO  o.m.C.SellerBehaviour - Received a bet 19.286492270829402 which less than my prev bet  21.61238328671088. Sending the new one 16.5907746894975
+02.нояб..2023 14:58:39.342 [Seller2] INFO  o.m.C.SellerBehaviour - Received a bet 16.5907746894975 which less than my prev bet  19.286492270829402. Sending the new one 15.034900065292872
+02.нояб..2023 14:58:39.342 [Seller1] INFO  o.m.C.SellerBehaviour - Received a bet 15.034900065292872 which less than my prev bet  16.5907746894975. Sending the new one 13.128799436510922
+02.нояб..2023 14:58:39.342 [Seller2] INFO  o.m.C.SellerBehaviour - Received a bet 13.128799436510922 which is less than my minimal price 14.717292780967334. Quit the auction. 
+09.нояб..2023 23:58:01.160 [Seller2] INFO  o.m.C.AgentSeller - My min price 18.36852440709405
+09.нояб..2023 23:58:01.160 [Seller1] INFO  o.m.C.AgentSeller - My min price 10.074251368718906
+09.нояб..2023 23:58:04.165 [Seller1] INFO  o.m.C.SellerBehaviour - Received bet 36.7370488141881 from Seller2 but the msg is ignored cause my prev bet20.148502737437813 is less
+09.нояб..2023 23:58:04.166 [Seller2] INFO  o.m.C.SellerBehaviour - Received a bet 20.148502737437813 which less than my prev bet  36.7370488141881. Sending the new one 17.298324281681904
+09.нояб..2023 23:58:04.166 [Seller1] INFO  o.m.C.SellerBehaviour - Received a bet 17.298324281681904 which less than my prev bet  20.148502737437813. Sending the new one 16.001270897356175
+09.нояб..2023 23:58:04.166 [Seller2] INFO  o.m.C.SellerBehaviour - Received a bet 16.001270897356175 which is less than my minimal price 18.36852440709405. Quit the auction. 
