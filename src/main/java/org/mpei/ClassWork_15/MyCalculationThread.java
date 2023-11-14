@@ -11,6 +11,5 @@ public class MyCalculationThread extends Thread {
                 throw new RuntimeException(e);
             }
         }
-
     }
 }

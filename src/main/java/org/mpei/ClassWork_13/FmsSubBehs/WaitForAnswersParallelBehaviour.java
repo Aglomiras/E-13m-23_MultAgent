@@ -11,7 +11,7 @@ public class WaitForAnswersParallelBehaviour extends ParallelBehaviour {
     private Behaviour wakeupBeh;
     private ReceiveAnswersSubBeh receiveBeh;
 
-    public WaitForAnswersParallelBehaviour(int participantsCount){
+    public WaitForAnswersParallelBehaviour(int participantsCount) {
         super(WHEN_ANY);
         this.participantsCount = participantsCount;
     }

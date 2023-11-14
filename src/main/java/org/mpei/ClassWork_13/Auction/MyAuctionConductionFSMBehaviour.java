@@ -9,7 +9,7 @@ import org.mpei.ClassWork_13.FmsSubBehs.WaitForAnswersParallelBehaviour;
 import java.util.List;
 
 public class MyAuctionConductionFSMBehaviour extends FSMBehaviour {
-    private static final String FIRST_STATE="firstState", WAIT_PROPOSES="waitProps", GOOD_END="goodEnd", BAD_END="badEnd";
+    private static final String FIRST_STATE = "firstState", WAIT_PROPOSES = "waitProps", GOOD_END = "goodEnd", BAD_END = "badEnd";
     @Override
     public void onStart() {
         //TODO: fill it with DF results
@@ -17,7 +17,7 @@ public class MyAuctionConductionFSMBehaviour extends FSMBehaviour {
         List<String> receivers = List.of("Agent2");
         this.registerFirstState(new SendInvaites(receivers), FIRST_STATE);
         this.registerState(new WaitForAnswersParallelBehaviour(receivers.size()), WAIT_PROPOSES);
-        this.registerLastState(new GoodEnd(),GOOD_END);
+        this.registerLastState(new GoodEnd(), GOOD_END);
         this.registerLastState(new BadEnd(), BAD_END);
 
         this.registerDefaultTransition(FIRST_STATE, WAIT_PROPOSES);
