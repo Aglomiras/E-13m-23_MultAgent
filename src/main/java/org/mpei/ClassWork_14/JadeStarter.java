@@ -9,6 +9,9 @@ import java.util.List;
 import java.util.Map;
 
 public class JadeStarter {
+    /**
+     * Создание агентов через main
+     * */
     public static void main(String[] args) {
         Map<String, Class<?>> agents = Map.of(
                 "buyer", AgentBuyer.class,

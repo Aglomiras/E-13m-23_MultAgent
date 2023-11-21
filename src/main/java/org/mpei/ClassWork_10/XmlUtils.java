@@ -8,7 +8,9 @@ import java.io.File;
 import java.util.Optional;
 
 public class XmlUtils {
-    private XmlUtils() {}
+    private XmlUtils() {
+    }
+
     public static <T> Optional<T> parse(String path, Class<T> clazz) {
 
         try {
@@ -32,7 +34,5 @@ public class XmlUtils {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-
     }
 }

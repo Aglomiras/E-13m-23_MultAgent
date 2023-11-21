@@ -5,7 +5,7 @@ import lombok.SneakyThrows;
 public class Lecture {
     /**
      * Daemon - поток, которого не ждут.
-     * java -приложеие не ждет, когда завершится поток Daemon
+     * Java-приложение не ждет, когда завершится поток Daemon
      */
     @SneakyThrows
     public static void main(String[] args) {

@@ -4,6 +4,7 @@ import com.sun.jna.NativeLibrary;
 import lombok.SneakyThrows;
 import org.pcap4j.core.*;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class RawUdpSocketServer {
@@ -28,19 +29,27 @@ public class RawUdpSocketServer {
         PcapHandle pcapHandle = networkInterface.openLive(65536, PcapNetworkInterface.PromiscuousMode.PROMISCUOUS, 50);
         pcapHandle.setFilter("ip proto \\udp && dst port "+port, BpfProgram.BpfCompileMode.NONOPTIMIZE);
 
+        runInThread(pcapHandle);
+
+    }
+
+    protected void runInThread(PcapHandle pcapHandle) {
         new Thread( ()-> {
-            try {
-                pcapHandle.loop(0, (PacketListener) packet -> {
-                    byte[] rawData = packet.getRawData();
-                    byte[] data = new byte[rawData.length-32];
-                    System.arraycopy(rawData, 32, data, 0, data.length);
-                    System.out.println(new String(data));
-                });
-            } catch (PcapNativeException | InterruptedException | NotOpenException e) {
-                throw new RuntimeException(e);
-            }
+            grabMethod(pcapHandle);
         }).start();
+    }
 
-
+    protected void grabMethod(PcapHandle pcapHandle) {
+        try {
+            pcapHandle.loop(0, (PacketListener) packet -> {
+                byte[] rawData = packet.getRawData();
+                byte[] data = new byte[rawData.length-32];
+                System.out.println(Arrays.toString(data));
+                System.arraycopy(rawData, 32, data, 0, data.length);
+                System.out.println(new String(data));
+            });
+        } catch (PcapNativeException | InterruptedException | NotOpenException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
