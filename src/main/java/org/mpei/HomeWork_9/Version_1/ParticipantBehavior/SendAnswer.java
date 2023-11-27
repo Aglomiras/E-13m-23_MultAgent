@@ -36,18 +36,18 @@ public class SendAnswer extends OneShotBehaviour {
                 log.info("Цена >0 " + myAgent.getLocalName());
                 double recIntP = randomPositiv();
                 message.setContent(String.valueOf(recIntP)); //Добавление цены в сообщение
+                myAgent.send(message); //Отправка сообщения
                 break;
             case (1):
                 log.info("Цена <0 " + myAgent.getLocalName());
                 double recIntN = randNegativ();
                 message.setContent(String.valueOf(recIntN));
+                myAgent.send(message); //Отправка сообщения
                 break;
             case (2):
                 log.info("Не отвечаю! " + myAgent.getLocalName());
-                message.setContent("666");
                 break;
         }
-        myAgent.send(message); //Отправка сообщения
     }
 
     @Override

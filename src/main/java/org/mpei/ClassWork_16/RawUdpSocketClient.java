@@ -9,17 +9,24 @@ import java.util.List;
 
 public class RawUdpSocketClient {
     private PcapHandle pcapHandle;
-//    private
-//    @SneakyThrows
-//    public void start(int port) {
-//        List<PcapNetworkInterface> allDevs = Pcaps.findAllDevs();
-//        PcapNetworkInterface networkInterface = null;
-//        for (PcapNetworkInterface allDev : allDevs) {
-//            if (allDev.getName().equals("\\Device\\NPF_Loopback")) {
-//                networkInterface = allDev;
-//                break;
-//            }
-//        }
-//        pcapHandle = networkInterface.openLive(65536, PcapNetworkInterface.PromiscuousMode.PROMISCUOUS, 50);
-//    }
+
+    @SneakyThrows
+    public void send(byte[] data) {
+        pcapHandle.sendPacket(data);
+    }
+
+    @SneakyThrows
+    public void initialize(int port) {
+        List<PcapNetworkInterface> allDevs = Pcaps.findAllDevs();
+        PcapNetworkInterface networkInterface = null;
+        for (PcapNetworkInterface allDev : allDevs) {
+            if (allDev.getName().equals("\\Device\\NPF_Loopback")) {
+                networkInterface = allDev;
+                break;
+            }
+        }
+        pcapHandle = networkInterface.openLive(65536, PcapNetworkInterface.PromiscuousMode.PROMISCUOUS, 50);
+
+
+    }
 }

@@ -781,3 +781,36 @@
 16.нояб..2023 14:32:21.977 [main] INFO  o.pcap4j.core.Pcaps - 11 NIF(s) found.
 16.нояб..2023 14:32:21.982 [main] INFO  o.p.u.PropertiesLoader - [org/pcap4j/pcap4j.properties] Could not get value by org.pcap4j.dlt.raw, use default value: 12
 16.нояб..2023 14:32:21.990 [pool-1-thread-1] INFO  o.p.core.PcapHandle - Starting loop.
+24.нояб..2023 15:28:02.237 [Initiator] INFO  o.m.H.V.A.AuctionInitiatorAgent - I was born Initiator
+24.нояб..2023 15:28:02.237 [PartAgent3] INFO  o.m.H.V.A.AuctionParticipantAgent - I was born PartAgent3
+24.нояб..2023 15:28:02.237 [PartAgent1] INFO  o.m.H.V.A.AuctionParticipantAgent - I was born PartAgent1
+24.нояб..2023 15:28:02.237 [PartAgent2] INFO  o.m.H.V.A.AuctionParticipantAgent - I was born PartAgent2
+24.нояб..2023 15:28:02.250 [PartAgent1] INFO  o.m.H.V.P.WaitForInivite - Предложение доставлено! PartAgent1
+24.нояб..2023 15:28:02.250 [PartAgent3] INFO  o.m.H.V.P.WaitForInivite - Предложение доставлено! PartAgent3
+24.нояб..2023 15:28:02.250 [PartAgent2] INFO  o.m.H.V.P.WaitForInivite - Предложение доставлено! PartAgent2
+24.нояб..2023 15:28:02.250 [PartAgent3] INFO  o.m.H.V.P.SendAnswer - Не отвечаю! PartAgent3
+24.нояб..2023 15:28:02.250 [PartAgent1] INFO  o.m.H.V.P.SendAnswer - Цена <0 PartAgent1
+24.нояб..2023 15:28:02.250 [PartAgent2] INFO  o.m.H.V.P.SendAnswer - Не отвечаю! PartAgent2
+24.нояб..2023 15:28:02.251 [PartAgent3] INFO  o.m.H.V.P.Fail - Я зафейлил сделку... PartAgent3
+24.нояб..2023 15:28:02.251 [PartAgent2] INFO  o.m.H.V.P.Fail - Я зафейлил сделку... PartAgent2
+24.нояб..2023 15:28:02.251 [PartAgent1] INFO  o.m.H.V.P.Fail - Я зафейлил сделку... PartAgent1
+24.нояб..2023 15:28:02.252 [Initiator] INFO  o.m.H.V.I.WaitForProposes - Сообщений от участников не пришло! Initiator
+24.нояб..2023 15:28:02.252 [Initiator] INFO  o.m.H.V.I.Fail - Провал аукциона! Initiator
+24.нояб..2023 15:52:28.751 [PartAgent2] INFO  o.m.H.V.A.AuctionParticipantAgent - I was born PartAgent2
+24.нояб..2023 15:52:28.751 [Initiator] INFO  o.m.H.V.A.AuctionInitiatorAgent - I was born Initiator
+24.нояб..2023 15:52:28.751 [PartAgent3] INFO  o.m.H.V.A.AuctionParticipantAgent - I was born PartAgent3
+24.нояб..2023 15:52:28.751 [PartAgent1] INFO  o.m.H.V.A.AuctionParticipantAgent - I was born PartAgent1
+24.нояб..2023 15:52:28.759 [PartAgent2] INFO  o.m.H.V.P.WaitForInivite - Предложение доставлено! PartAgent2
+24.нояб..2023 15:52:28.760 [PartAgent1] INFO  o.m.H.V.P.WaitForInivite - Предложение доставлено! PartAgent1
+24.нояб..2023 15:52:28.760 [PartAgent2] INFO  o.m.H.V.P.SendAnswer - Цена >0 PartAgent2
+24.нояб..2023 15:52:28.760 [PartAgent3] INFO  o.m.H.V.P.WaitForInivite - Предложение доставлено! PartAgent3
+24.нояб..2023 15:52:28.760 [PartAgent1] INFO  o.m.H.V.P.SendAnswer - Не отвечаю! PartAgent1
+24.нояб..2023 15:52:28.760 [PartAgent3] INFO  o.m.H.V.P.SendAnswer - Цена <0 PartAgent3
+24.нояб..2023 15:52:28.760 [PartAgent1] INFO  o.m.H.V.P.Fail - Я зафейлил сделку... PartAgent1
+24.нояб..2023 15:52:28.760 [PartAgent3] INFO  o.m.H.V.P.Fail - Я зафейлил сделку... PartAgent3
+24.нояб..2023 15:52:33.761 [Initiator] INFO  o.m.H.V.I.WaitForProposes - TIME IS UP
+24.нояб..2023 15:52:33.761 [Initiator] INFO  o.m.H.V.I.WaitForProposes - Ответил как минимум один участник! Initiator
+24.нояб..2023 15:52:33.762 [PartAgent2] INFO  o.m.H.V.P.Fail - Я зафейлил сделку... PartAgent2
+24.нояб..2023 15:52:38.768 [Initiator] INFO  o.m.H.V.I.WaitForAcceptContract - TIME IS UP
+24.нояб..2023 15:52:38.769 [Initiator] INFO  o.m.H.V.I.WaitForAcceptContract - Никто не ответил... Initiator
+24.нояб..2023 15:52:38.769 [Initiator] INFO  o.m.H.V.I.Fail - Провал аукциона! Initiator
