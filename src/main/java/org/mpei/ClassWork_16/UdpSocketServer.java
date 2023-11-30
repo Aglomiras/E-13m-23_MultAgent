@@ -30,7 +30,7 @@ public class UdpSocketServer {
                     throw new RuntimeException(e);
                 }
                 byte[] data = packet.getData();
-                String s = new String(data).replace("\000", "");
+                String s = new String(data).replace("\000", ""); //Уменьшение длины пакета до количества передаваемых значений
                 System.out.println("Server received: " + s);
             }
         });
