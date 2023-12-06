@@ -854,3 +854,23 @@
 30.нояб..2023 03:17:18.069 [main] INFO  o.p.u.PropertiesLoader - [org/pcap4j/pcap4j.properties] Could not get value by org.pcap4j.dlt.raw, use default value: 12
 30.нояб..2023 03:17:18.074 [Thread-0] INFO  o.p.core.PcapHandle - Starting loop.
 30.нояб..2023 03:17:18.136 [Thread-0] WARN  o.p.p.f.PacketFactories - No PacketFactoryBinder is available. All packets will be captured as UnknownPacket.
+30.нояб..2023 21:09:06.578 [main] INFO  o.p.c.NativeMappings - Pcap4J successfully loaded a native pcap library: Npcap version 1.71, based on libpcap version 1.10.2-PRE-GIT
+30.нояб..2023 21:09:08.002 [main] WARN  o.pcap4j.core.Pcaps - Error calling PacketRequest: Couldn't get error message for error (3758096571)
+30.нояб..2023 21:09:08.021 [main] INFO  o.p.u.PropertiesLoader - [org/pcap4j/pcap4j.properties] Could not get value by org.pcap4j.af.inet, use default value: 2
+30.нояб..2023 21:09:08.021 [main] INFO  o.p.u.PropertiesLoader - [org/pcap4j/pcap4j.properties] Could not get value by org.pcap4j.af.inet6, use default value: 23
+30.нояб..2023 21:09:08.021 [main] INFO  o.p.u.PropertiesLoader - [org/pcap4j/pcap4j.properties] Could not get value by org.pcap4j.af.packet, use default value: 17
+30.нояб..2023 21:09:08.021 [main] INFO  o.p.u.PropertiesLoader - [org/pcap4j/pcap4j.properties] Could not get value by org.pcap4j.af.link, use default value: 18
+30.нояб..2023 21:09:08.033 [main] INFO  o.pcap4j.core.Pcaps - 10 NIF(s) found.
+30.нояб..2023 21:09:08.035 [main] INFO  o.p.u.PropertiesLoader - [org/pcap4j/pcap4j.properties] Could not get value by org.pcap4j.dlt.raw, use default value: 12
+30.нояб..2023 21:09:08.041 [Thread-0] INFO  o.p.core.PcapHandle - Starting loop.
+30.нояб..2023 21:09:08.099 [Thread-0] WARN  o.p.p.f.PacketFactories - No PacketFactoryBinder is available. All packets will be captured as UnknownPacket.
+30.нояб..2023 22:02:43.730 [main] INFO  o.p.c.NativeMappings - Pcap4J successfully loaded a native pcap library: Npcap version 1.71, based on libpcap version 1.10.2-PRE-GIT
+30.нояб..2023 22:02:45.139 [main] WARN  o.pcap4j.core.Pcaps - Error calling PacketRequest: Couldn't get error message for error (3758096571)
+30.нояб..2023 22:02:45.157 [main] INFO  o.p.u.PropertiesLoader - [org/pcap4j/pcap4j.properties] Could not get value by org.pcap4j.af.inet, use default value: 2
+30.нояб..2023 22:02:45.158 [main] INFO  o.p.u.PropertiesLoader - [org/pcap4j/pcap4j.properties] Could not get value by org.pcap4j.af.inet6, use default value: 23
+30.нояб..2023 22:02:45.158 [main] INFO  o.p.u.PropertiesLoader - [org/pcap4j/pcap4j.properties] Could not get value by org.pcap4j.af.packet, use default value: 17
+30.нояб..2023 22:02:45.158 [main] INFO  o.p.u.PropertiesLoader - [org/pcap4j/pcap4j.properties] Could not get value by org.pcap4j.af.link, use default value: 18
+30.нояб..2023 22:02:45.169 [main] INFO  o.pcap4j.core.Pcaps - 10 NIF(s) found.
+30.нояб..2023 22:02:45.173 [main] INFO  o.p.u.PropertiesLoader - [org/pcap4j/pcap4j.properties] Could not get value by org.pcap4j.dlt.raw, use default value: 12
+30.нояб..2023 22:02:45.178 [Thread-0] INFO  o.p.core.PcapHandle - Starting loop.
+30.нояб..2023 22:02:45.234 [Thread-0] WARN  o.p.p.f.PacketFactories - No PacketFactoryBinder is available. All packets will be captured as UnknownPacket.
