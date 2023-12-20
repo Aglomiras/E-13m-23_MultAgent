@@ -5,7 +5,7 @@ import jade.lang.acl.ACLMessage;
 import jade.lang.acl.MessageTemplate;
 
 public class AuctionStartMsgCatcher extends Behaviour {
-    private final double  myMinPrice;
+    private final double myMinPrice;
 
     public AuctionStartMsgCatcher(double myMinPrice) {
         this.myMinPrice = myMinPrice;
@@ -14,7 +14,7 @@ public class AuctionStartMsgCatcher extends Behaviour {
     @Override
     public void action() {
         ACLMessage auction = myAgent.receive(MessageTemplate.MatchProtocol("Auction"));
-        if (auction != null){
+        if (auction != null) {
             this.myAgent.addBehaviour(new SellerBehaviour(auction.getContent(), myMinPrice));
         } else {
             block();

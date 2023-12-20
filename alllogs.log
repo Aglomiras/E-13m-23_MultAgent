@@ -874,3 +874,32 @@
 30.нояб..2023 22:02:45.173 [main] INFO  o.p.u.PropertiesLoader - [org/pcap4j/pcap4j.properties] Could not get value by org.pcap4j.dlt.raw, use default value: 12
 30.нояб..2023 22:02:45.178 [Thread-0] INFO  o.p.core.PcapHandle - Starting loop.
 30.нояб..2023 22:02:45.234 [Thread-0] WARN  o.p.p.f.PacketFactories - No PacketFactoryBinder is available. All packets will be captured as UnknownPacket.
+16.дек..2023 15:21:14.090 [seller1] INFO  o.m.C.AgentSeller - My min price 13.497553128644476
+16.дек..2023 15:21:14.090 [seller2] INFO  o.m.C.AgentSeller - My min price 15.904637943889437
+16.дек..2023 15:21:17.092 [seller1] INFO  o.m.C.SellerBehaviour - Received bet 31.809275887778874 from seller2 but the msg is ignored cause my prev bet26.995106257288953 is less
+16.дек..2023 15:21:17.092 [seller2] INFO  o.m.C.SellerBehaviour - Received a bet 26.995106257288953 which less than my prev bet  31.809275887778874. Sending the new one 23.343558310053297
+16.дек..2023 15:21:17.093 [seller1] INFO  o.m.C.SellerBehaviour - Received a bet 23.343558310053297 which less than my prev bet  26.995106257288953. Sending the new one 21.495197018753462
+16.дек..2023 15:21:17.093 [seller2] INFO  o.m.C.SellerBehaviour - Received a bet 21.495197018753462 which less than my prev bet  23.343558310053297. Sending the new one 19.834128498915828
+16.дек..2023 15:21:17.094 [seller1] INFO  o.m.C.SellerBehaviour - Received a bet 19.834128498915828 which less than my prev bet  21.495197018753462. Sending the new one 18.640028567015232
+16.дек..2023 15:21:17.094 [seller2] INFO  o.m.C.SellerBehaviour - Received a bet 18.640028567015232 which less than my prev bet  19.834128498915828. Sending the new one 17.273919482729955
+16.дек..2023 15:21:17.094 [seller1] INFO  o.m.C.SellerBehaviour - Received a bet 17.273919482729955 which less than my prev bet  18.640028567015232. Sending the new one 15.003028920231054
+16.дек..2023 15:21:17.095 [seller2] INFO  o.m.C.SellerBehaviour - Received a bet 15.003028920231054 which is less than my minimal price 15.904637943889437. Quit the auction. 
+19.дек..2023 03:53:15.268 [PartAgent2] INFO  o.m.H.V.A.AuctionParticipantAgent - I was born PartAgent2
+19.дек..2023 03:53:15.268 [PartAgent3] INFO  o.m.H.V.A.AuctionParticipantAgent - I was born PartAgent3
+19.дек..2023 03:53:15.268 [PartAgent1] INFO  o.m.H.V.A.AuctionParticipantAgent - I was born PartAgent1
+19.дек..2023 03:53:15.268 [Initiator] INFO  o.m.H.V.A.AuctionInitiatorAgent - I was born Initiator
+19.дек..2023 03:53:15.283 [PartAgent2] INFO  o.m.H.V.P.WaitForInivite - Предложение доставлено! PartAgent2
+19.дек..2023 03:53:15.283 [PartAgent1] INFO  o.m.H.V.P.WaitForInivite - Предложение доставлено! PartAgent1
+19.дек..2023 03:53:15.283 [PartAgent3] INFO  o.m.H.V.P.WaitForInivite - Предложение доставлено! PartAgent3
+19.дек..2023 03:53:15.283 [PartAgent3] INFO  o.m.H.V.P.SendAnswer - Не отвечаю! PartAgent3
+19.дек..2023 03:53:15.283 [PartAgent1] INFO  o.m.H.V.P.SendAnswer - Цена >0 PartAgent1
+19.дек..2023 03:53:15.283 [PartAgent2] INFO  o.m.H.V.P.SendAnswer - Не отвечаю! PartAgent2
+19.дек..2023 03:53:15.284 [PartAgent2] INFO  o.m.H.V.P.Fail - Я зафейлил сделку... PartAgent2
+19.дек..2023 03:53:15.284 [PartAgent3] INFO  o.m.H.V.P.Fail - Я зафейлил сделку... PartAgent3
+19.дек..2023 03:53:20.284 [Initiator] INFO  o.m.H.V.I.WaitForProposes - TIME IS UP
+19.дек..2023 03:53:20.284 [Initiator] INFO  o.m.H.V.I.WaitForProposes - Ответил как минимум один участник! Initiator
+19.дек..2023 03:53:20.285 [PartAgent1] INFO  o.m.H.V.P.WaitForContract - I'm a winner PartAgent1
+19.дек..2023 03:53:20.285 [PartAgent1] INFO  o.m.H.V.P.SendContract - Отказ от контракта! PartAgent1
+19.дек..2023 03:53:20.286 [PartAgent1] INFO  o.m.H.V.P.Fail - Я зафейлил сделку... PartAgent1
+19.дек..2023 03:53:20.286 [Initiator] INFO  o.m.H.V.I.WaitForAcceptContract - Победитель не захотел заключать контракт... Initiator
+19.дек..2023 03:53:20.286 [Initiator] INFO  o.m.H.V.I.Fail - Провал аукциона! Initiator
