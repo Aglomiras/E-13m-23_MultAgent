@@ -6,12 +6,14 @@ package org.mpei;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * ЛЕКЦИЯ 1 - ОЗНАКОМИТЕЛЬНАЯ
  * Типы данных*/
 public class Main {
     public static void main(String[] args) {
+
 
 //        byte[] createByte = data.getBytes();
 //        int dataLength = createByte.length;
