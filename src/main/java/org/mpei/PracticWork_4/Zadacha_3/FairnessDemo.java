@@ -1,4 +1,4 @@
-package org.mpei.PracticWork_4.Zadacha_6;
+package org.mpei.PracticWork_4.Zadacha_3;
 
 import javax.swing.*;
 import java.awt.*;
@@ -21,7 +21,7 @@ public class FairnessDemo {
     }
 
     private static JFrame createFrame() {
-        JFrame frame = new JFrame("Fairness Demo");
+        JFrame frame = new JFrame("Fairness DemoThread");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(new Dimension(300, 200));
         return frame;
@@ -51,19 +51,12 @@ public class FairnessDemo {
                     }
                     progressBar.setValue(++c);
                     try {
-                        //simulate long running task with wait..
-                        // releasing the lock for long running task gives
-                        // хорошие шансы запустить другие потоки
-                        sharedObj.wait(100);
+                        sharedObj.wait(100); //Освобождение монитора
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-
-
                 }
-
             }
         }
     }
 }
-

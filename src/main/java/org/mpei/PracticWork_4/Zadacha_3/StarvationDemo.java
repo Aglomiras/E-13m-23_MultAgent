@@ -1,4 +1,4 @@
-package org.mpei.PracticWork_4.Zadacha_5;
+package org.mpei.PracticWork_4.Zadacha_3;
 
 import javax.swing.*;
 import java.awt.*;
@@ -21,7 +21,7 @@ public class StarvationDemo {
     }
 
     private static JFrame createFrame() {
-        JFrame frame = new JFrame("Starvation Demo");
+        JFrame frame = new JFrame("Starvation DemoThread");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(new Dimension(300, 200));
         return frame;
@@ -51,7 +51,6 @@ public class StarvationDemo {
                     }
                     progressBar.setValue(++c);
                     try {
-                        //sleep the thread to simulate long running task
                         Thread.sleep(100);
                     } catch (InterruptedException e) {
                         e.printStackTrace();

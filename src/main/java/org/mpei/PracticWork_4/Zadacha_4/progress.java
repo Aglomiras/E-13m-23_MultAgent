@@ -7,38 +7,26 @@ package org.mpei.PracticWork_4.Zadacha_4;
 import javax.swing.*;
 
 public class progress extends JFrame {
-
     // create a frame
     static JFrame f;
-
     static JProgressBar b;
-
     public static void main(String[] args) {
-
         // create a frame
         f = new JFrame("ProgressBar demo");
-
         // create a panel
         JPanel p = new JPanel();
-
         // create a progressbar
         b = new JProgressBar();
-
         // set initial value
         b.setValue(0);
-
         b.setStringPainted(true);
-
         // add progressbar
         p.add(b);
-
         // add panel
         f.add(p);
-
         // set the size of the frame
         f.setSize(500, 500);
         f.setVisible(true);
-
         fill();
     }
 

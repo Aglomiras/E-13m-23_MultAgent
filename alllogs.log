@@ -903,3 +903,13 @@
 19.дек..2023 03:53:20.286 [PartAgent1] INFO  o.m.H.V.P.Fail - Я зафейлил сделку... PartAgent1
 19.дек..2023 03:53:20.286 [Initiator] INFO  o.m.H.V.I.WaitForAcceptContract - Победитель не захотел заключать контракт... Initiator
 19.дек..2023 03:53:20.286 [Initiator] INFO  o.m.H.V.I.Fail - Провал аукциона! Initiator
+19.мар..2024 18:55:26.020 [main] INFO  o.p.c.NativeMappings - Pcap4J successfully loaded a native pcap library: Npcap version 1.71, based on libpcap version 1.10.2-PRE-GIT
+19.мар..2024 18:55:27.679 [main] WARN  o.pcap4j.core.Pcaps - Error calling PacketRequest: Couldn't get error message for error (3758096571)
+19.мар..2024 18:55:27.699 [main] INFO  o.p.u.PropertiesLoader - [org/pcap4j/pcap4j.properties] Could not get value by org.pcap4j.af.inet, use default value: 2
+19.мар..2024 18:55:27.699 [main] INFO  o.p.u.PropertiesLoader - [org/pcap4j/pcap4j.properties] Could not get value by org.pcap4j.af.inet6, use default value: 23
+19.мар..2024 18:55:27.699 [main] INFO  o.p.u.PropertiesLoader - [org/pcap4j/pcap4j.properties] Could not get value by org.pcap4j.af.packet, use default value: 17
+19.мар..2024 18:55:27.699 [main] INFO  o.p.u.PropertiesLoader - [org/pcap4j/pcap4j.properties] Could not get value by org.pcap4j.af.link, use default value: 18
+19.мар..2024 18:55:27.711 [main] INFO  o.pcap4j.core.Pcaps - 10 NIF(s) found.
+19.мар..2024 18:55:27.717 [main] INFO  o.p.u.PropertiesLoader - [org/pcap4j/pcap4j.properties] Could not get value by org.pcap4j.dlt.raw, use default value: 12
+19.мар..2024 18:55:27.723 [Thread-0] INFO  o.p.core.PcapHandle - Starting loop.
+19.мар..2024 18:55:27.790 [Thread-0] WARN  o.p.p.f.PacketFactories - No PacketFactoryBinder is available. All packets will be captured as UnknownPacket.
